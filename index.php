@@ -19,7 +19,7 @@
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    echo "Connected successfully";
+    echo "Connected successfully\n";
     // define variables and set to empty values
     $nameErr = $emailErr = $passwordErr = "";
     $name = $email = $password = "";
@@ -55,7 +55,7 @@
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
 
-        $sql = "SELECT * FROM fHwtL0NTeB.form_data";
+        $sql = "SELECT * FROM TGOhJ1gk0h.`collectted_data`";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
